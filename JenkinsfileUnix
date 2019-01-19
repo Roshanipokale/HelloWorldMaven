@@ -24,13 +24,5 @@ pipeline {
 
             }
         }
-        stage('Test'){
-            steps {
-                withMaven(maven : 'Maven3.5.2'){
-                        sh "mvn test"
-                }
-
-            }
-        }
     }
 }
